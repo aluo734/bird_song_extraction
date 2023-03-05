@@ -26,7 +26,7 @@
 	- Start time should be in minutes
 
 3. Folder with audio templates to look for.
-	- For zebra finches, these should be motifs (not whole bouts!) and individual introductory notes. Individual beeps that aren't followed by song motifs will be filtered out.
+	- For zebra finches, these should be motifs (not whole song bouts).
 
 ## Output files
 1. A folder containing a concatenated recording of each trial.

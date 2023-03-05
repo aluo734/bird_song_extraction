@@ -6,28 +6,24 @@
 1. Directory of raw recordings. This directory should include subdirectories, each representing a trials with all the recordings inside.
 	- Do not include slashes (forward or backward) or periods in the names. The trial names don't actually have to follow the temp_male_date format, but they should be identical in the directory and csv file of trial start times.
 
-Input_directory
-	Temperature_male_date
-		audio1.wav
-		audio2.wav
-		audio3.wav
-	Temperature_male_date
-		audio1.wav
-		audio2.wav
-		audio3.wav
-	Temperature_male_date
-		audio1.wav
-		audio2.wav
-		audio3.wav
+- Input_directory
+	- Temperature_male_date
+		- audio1.wav
+		- audio2.wav
+		- audio3.wav
+	- Temperature_male_date
+		- audio1.wav
+		- audio2.wav
+		- audio3.wav
+	- Temperature_male_date
+		- audio1.wav
+		- audio2.wav
+		- audio3.wav
 
 2. One csv file with two columns: (1) the name of the trials and (2) the start times of each trial, relative to the begnning of recording.
 	- Do not include a header (first row should be data, not the column names).
  	- Trial names should match the folder names in the directory.
 	- Start time should be in minutes
-
-Temperature_male_date, 35
-Temperature_male_date, 24
-Temperature_male_date, 65
 
 3. Folder with audio templates to look for.
 	- For zebra finches, these should be motifs (not whole bouts!) and individual introductory notes. Individual beeps that aren't followed by song motifs will be filtered out.

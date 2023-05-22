@@ -60,7 +60,7 @@ find_songs <- function(in_audio, template_directory, output_directory, min_song_
       to_delete = append(to_delete, i)
     }
   }
-  segment_times = segment_times[-to_delete,]
+  if (length(to_delete) > 0) {segment_times = segment_times[-to_delete,]}
 
   # export segment times as a csv
   if (!dir.exists(output_directory)) {

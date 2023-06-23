@@ -26,7 +26,7 @@ for folder in os.listdir(args.input_directory):
         continue
     combined = AudioSegment.empty()
     for song in os.listdir(trial):
-        if song.endswith('.wav'):
+        if song.endswith('.wav') & not song.startswith('.'):
             new = AudioSegment.from_wav(os.path.join(trial, song))
             combined = combined + new
     start_time = starts[folder]
